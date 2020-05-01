@@ -37,10 +37,10 @@ const io = socket(
 // app.delete('/board/deletegame/:room',controller.deleteGame);
 
 
-// massive(MASSIVE_CONNECTION).then(db=> {
-//     app.set('db', db);
-//     console.log('db is connected');
-// })
+massive(MASSIVE_CONNECTION).then(db=> {
+    app.set('db', db);
+    console.log('db is connected');
+})
 
 // io.on("connection", socket => {
 
